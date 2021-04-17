@@ -1,0 +1,80 @@
+body{
+    color: white;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/bg.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar{
+    width: 88%;
+    margin: auto;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h2{
+    width: 140px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+
+a{
+    transition: border-bottom 100s ease-out;
+}
+
+ a:hover{
+    border-bottom: 1px solid white;
+    padding-top: 5px;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+
+.left_col{
+    margin-left: 6%;
+}
+
+.left_col h1{
+    font-size: 90px;
+    line-height: 110px;
+    float: left;
+}
+
+.right_col{
+float: right;
+margin-right: 6%;
+margin-top: 120px;
+display: flex;
+align-items: center;
+
+}
+
+.right_col p{
+    align-items: center;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+

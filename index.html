@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music_website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <h2>Music 🎧 </h2>
+                <ul>
+                    <li><a>HOME</a></li>
+                    <li><a>ABOUT</a></li>
+                    <li><a>SPECIFICATIONS</a></li>
+                    <li><a>CONNECT</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <div class="left_col">
+                    <h1>My <br>Everything <br>Diamond eyes</h1>
+                </div>
+                <div class="right_col">
+                    <p>Click here to play </p>
+                    <span ><i id = "icon" class="far fa-play-circle fa-2x"></i></span>
+                </div>
+
+            </div>
+        </div>
+        <audio id="mysong">
+            <source src="images/Diamond Eyes - Everything [NCS Release] (320  kbps).mp3">
+        </audio>
+        <script>
+            var m = document.getElementById("mysong");
+            var i = document.getElementById("icon")
+
+            i.onclick = function(){
+                if (m.paused){
+                    m.play();
+                    i.className="fa fa-pause-circle fa-2x";
+                }
+                else{
+                    m.pause();
+                    i.className="far fa-play-circle fa-2x";
+                }
+            }
+
+        </script>
+    </body>
+</html>
